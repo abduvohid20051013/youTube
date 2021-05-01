@@ -1,0 +1,3 @@
+let videos = window.localStorage.getItem('data')
+if (!videos) videos = [{ title: "demo video", iframeLink: '<iframe width="560" height="315" src="https://www.youtube.com/embed/Fv-MoOhVhqU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', imageUrl:'https://picsum.photos/350/230'}]
+else videos = JSON.parse(videos)
